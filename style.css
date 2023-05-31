@@ -12,9 +12,9 @@
     --base-font: 'Roboto', sans-serif;
 
     /* Font-Size*/
-    --font-superjumbo : 5.5em;
-    --font-jumbo : 4em; 
-    --font-xjumbo : 3.5em;
+    --font-superjumbo-55 : 5.5em;
+    --font-jumbo-40 : 4em; 
+    --font-xjumbo-35 : 3.5em;
     --font-large-30: 3em;
     --font-xlarge-24: 2.4em;
     --font-medium-20: 2em;
@@ -154,4 +154,59 @@ img {
 .form-art-2 {
     height: 100%;
     padding: var(--spacing--24);
+}
+
+/* INICIO MAIN SUCCESS*/
+.main-success {
+    height: 100vh;
+    background-color: var(--secondary-solid-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-succes {
+    background-color: var(--light-font-solid);
+    width: 24%;
+    text-align: start;
+    padding: var(--spacing--40);
+    border-radius: var(--spacing--20);
+}
+
+.container-success {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing--24);
+}
+
+.container-success > input[type="button"] {
+    height: var(--spacing--40);
+    border-radius: var(--spacing--8);
+    background-color: var(--secondary-solid-dark);
+    color: var(--light-font-solid);
+    border: none;
+    font-size: var(--font-xsmall-14);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-icon-success {
+    color: var(--primary-solid-tomato);
+    font-size: var(--font-superjumbo-55);
+}
+
+.title-succes {
+    color: var(--secondary-solid-dark);
+    font-size: var(--font-xjumbo-35);
+    font-weight: 900;
+}
+
+.text-succes {
+    color: var(--secondary-solid-dark);
+    font-size: var(--font-xsmall-14);
+    line-height: var(--spacing--20);
+}
+
+.text-succes > span {
+    font-weight: bold;
 }
