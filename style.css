@@ -1,0 +1,157 @@
+@import url('https://fonts.google.com/specimen/Roboto');
+
+:root { 
+    /* Palette Colors*/
+    --primary-solid-tomato: hsl(4, 100%, 67%);
+    --secondary-solid-dark: hsl(234, 29%, 20%);
+    --third-solid-charcoal:  hsl(235, 18%, 26%);
+    --four-solid-gray: hsl(231, 7%, 60%);
+    --light-font-solid: hsl(0, 0%, 100%);
+
+    /* Typography*/
+    --base-font: 'Roboto', sans-serif;
+
+    /* Font-Size*/
+    --font-superjumbo : 5.5em;
+    --font-jumbo : 4em; 
+    --font-xjumbo : 3.5em;
+    --font-large-30: 3em;
+    --font-xlarge-24: 2.4em;
+    --font-medium-20: 2em;
+    --font-xmedium-18: 1.8em;
+    --font-small-16: 1.6em;
+    --font-xsmall-14: 1.4em;
+    --font-xxsmall-12: 1.2em;
+
+    /* Spacing */
+    --spacing--100: 10rem;
+    --spacing--80: 8rem;
+    --spacing--60: 6rem;
+    --spacing--40: 4rem;
+    --spacing--24: 2.4rem;
+    --spacing--20: 2rem;
+    --spacing--16: 1.6rem;
+    --spacing--12: 1.2rem;
+    --spacing--8: 0.8rem;
+    --spacing--4: 0.4rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* INICIO MAIN */
+#main {
+    background-color: var(--secondary-solid-dark);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--light-font-solid);
+    border-radius: var(--spacing--40);
+    overflow: hidden;
+}
+
+.form-art-1 {
+    display: flex;
+    gap: var(--spacing--20);
+    flex-direction: column;
+    align-items: start;
+    padding: var(--spacing--80) var(--spacing--40);
+}
+
+.form-art-1 > h2 {
+    font-size: var(--font-superjumbo);
+    color: var(--secondary-solid-dark);
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing--12);
+}
+
+.form-text > p {
+    font-size: var(--font-small-16);
+    color: var(--secondary-solid-dark);
+}
+
+.form-text > p:first-child {
+    margin: 0 0 var(--spacing--12) 0;
+}
+
+.form-text .form-icon {
+    color: var(--primary-solid-tomato);
+    vertical-align: middle;
+    font-size: var(--font-xxsmall-12);
+    margin: 0 var(--spacing--8) 0 0;
+}
+
+.form-art-1 > label {
+    display: flex;
+    gap: var(--spacing--8);
+    flex-direction: column;
+    font-size: var(--font-xxsmall-12);
+    font-weight: bold;
+    color: var(--secondary-solid-dark);
+    width: 100%;
+    margin: var(--spacing--12) 0 0 0;
+}
+
+.form-art-1 > label > input[type="email"] {
+    width: 100%;
+    border: 1px solid var(--four-solid-gray);
+    border-radius: var(--spacing--12);
+    height: var(--spacing--60);
+    padding: 0 var(--spacing--12) 0 var(--spacing--12);
+    margin: var(--spacing--8) 0 0 0;
+}
+
+.form-art-1 > label > input[type="email"]::placeholder {
+    font-size: var(--font-xxsmall-12);
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.form-art-1 > label > input[type="email"]:focus {
+    font-size: var(--font-xxsmall-12);
+}
+
+.form-art-1 > label > input[type="email"]:focus::placeholder {
+    opacity: 0;
+}
+
+.form-art-1 > input[type="submit"] {
+    width: 100%;
+    height: var(--spacing--60);
+    border-radius: var(--spacing--8);
+    border: none;
+    background-color: var(--secondary-solid-dark);
+    color: var(--light-font-solid);
+    font-weight: bold;
+    font-size: var(--font-xsmall-14);
+}
+
+.form-art-2 {
+    height: 100%;
+    padding: var(--spacing--24);
+}

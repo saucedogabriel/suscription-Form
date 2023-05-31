@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page | Suscription Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <main>
-        <section>
-            <form>
-                <div>
-                    <h2>Stay update!</h2>
-                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <p>Products discovery and building what matters</p>
-                    <p>Measuring to ensure updates are a sucecess</p>
-                    <p>And much more!</p>
-                    <label for="">Email address
-                        <input type="email" name="" id="" placeholder="email@company.com">
-                    </label>
-                    <input type="submit" value="Suscribe to monthly newsletter">
-                </div>
-                    <picture>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page | Suscription Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="main">
+                <form class="section-form">
+                    <div class="form-art-1">
+                        <h2>Stay updated!</h2>
+                        <div class="form-text">
+                            <p>Join 60,000+ product managers receiving monthly <br>
+                                updates on:</p>
+                            <p>
+                                <iconify-icon class="form-icon" icon="ph:check-circle-fill">
+                                </iconify-icon>Products discovery and building what matters
+                            </p>
+                            <p>
+                                <iconify-icon class="form-icon" icon="ph:check-circle-fill">
+                                </iconify-icon>Measuring to ensure updates are a sucecess
+                            </p>
+                            <p>
+                                <iconify-icon class="form-icon" icon="ph:check-circle-fill">
+                                </iconify-icon>And much more!
+                            </p>
+                        </div>
+                        <label for="">Email address
+                            <input size="13" type="email" name="" id="" placeholder="email@company.com" pattern="+.@gmail.com" title="Por favor, proporciona solo una dirección de correo electrónico de Gmail"/>
+                        </label>
+                        <input type="submit" value="Suscribe to monthly newsletter"/>
+                    </div>
+                    <picture class="form-art-2">
                         <img src="./img/illustration-sign-up-desktop.svg" alt="">
                     </picture>
-            </form>
-        </section>
-    </main>
-</body>
+                </form>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    </body>
 </html>
+
