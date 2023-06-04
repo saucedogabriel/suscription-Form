@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Landing Page | Suscription Form</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-         <main class="main-success">
-            <section class="section-succes">
+const FORMULARIO = document.querySelector('.section-form');
+const INPUT = document.querySelector('#email');
+const SUBMIT = document.querySelector('.submit');
+const MAIN = document.querySelector('#main');
+
+const submitFunction = () => {
+
+    let form = FORMULARIO.checkValidity() ;
+
+    if (!form) {
+        console.log('El formulario es invalido'); 
+    }else if(form){
+        main.innerHTML = `
+        <section class="section-succes">
                 <article class="container-success">
                     <iconify-icon class="form-icon-success" icon="ph:check-circle-fill"></iconify-icon>
                     <h2 class="title-succes">Thanks for<br> 
@@ -20,8 +23,9 @@
                     <input type="button" value="Dissmis mesagge">
                 </article>
             </section>
-         </main>
-         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-         <script src="script.js"></script>
-    </body>
-</html>
+        `
+        console.log('El formulario es valido');
+    }
+}
+
+SUBMIT.addEventListener('click', submitFunction );
