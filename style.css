@@ -106,7 +106,7 @@ img {
     margin: 0 var(--spacing--8) 0 0;
 }
 
-.form-art-1 > label {
+.label {
     display: flex;
     gap: var(--spacing--8);
     flex-direction: column;
@@ -115,9 +115,10 @@ img {
     color: var(--secondary-solid-dark);
     width: 100%;
     margin: var(--spacing--12) 0 0 0;
+    position: relative;
 }
 
-.form-art-1 > label > input[type="email"] {
+#email {
     width: 100%;
     border: 1px solid var(--four-solid-gray);
     border-radius: var(--spacing--12);
@@ -212,3 +213,22 @@ img {
 .text-succes > span {
     font-weight: bold;
 }
+
+.email {
+    position: relative;
+}
+
+/* INVALIDO */
+.invalid {
+    color: red;
+    position: absolute;
+    right: 0;
+}
+
+.invalid-input {
+    outline: none;
+    border: 2px solid red !important;
+    color: red;
+}
+
+
