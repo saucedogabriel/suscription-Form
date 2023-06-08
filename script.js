@@ -1,4 +1,3 @@
-// Código JavaScript del archivo index.html
 const FORMULARIO = document.querySelector('.section-form');
 const INPUT_EMAIL = document.querySelector('#email');
 const INPUT_SUBMIT = document.querySelector('.submit');

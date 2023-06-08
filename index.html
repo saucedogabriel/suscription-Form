@@ -28,13 +28,14 @@
                             </p>
                         </div>
                         <label class="label" for="email">Email address
-                            <input size="13" type="email" name="email" id="email"  placeholder="email@company.com" title="Por favor, proporciona solo una dirección de correo electrónico de Gmail"/>
+                            <input size="13" type="email" name="email" id="email"  placeholder="email@company.com" title="Por favor, proporciona solo una dirección de correo electrónico de Gmail" required/>
                             <p class="invalid">Valid Email Required</p>
                         </label>
                         <input class="submit" type="submit" value="Suscribe to monthly newsletter"/>
                     </div>
                     <picture class="form-art-2">
-                        <img src="./img/illustration-sign-up-desktop.svg" alt="">
+                        <source media="(max-width:480px )" srcset="./img/illustration-sign-up-mobile.svg">
+                        <img src="./img/illustration-sign-up-desktop.svg" alt="imagen de formulario">
                     </picture>
                 </form>
         </main>
